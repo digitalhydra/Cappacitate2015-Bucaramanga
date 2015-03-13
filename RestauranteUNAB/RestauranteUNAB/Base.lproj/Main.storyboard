@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -247,10 +248,10 @@
             </objects>
             <point key="canvasLocation" x="1406" y="628"/>
         </scene>
-        <!--View Controller-->
+        <!--Navegador View Controller-->
         <scene sceneID="bGG-uE-Nvm">
             <objects>
-                <viewController id="UXq-lV-o8I" sceneMemberID="viewController">
+                <viewController id="UXq-lV-o8I" customClass="NavegadorViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NnW-jV-g0w"/>
                         <viewControllerLayoutGuide type="bottom" id="0en-Ik-yx0"/>
@@ -258,13 +259,35 @@
                     <view key="view" contentMode="scaleToFill" id="jrq-5D-QFu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9dV-ao-hc1">
+                                <rect key="frame" x="16" y="20" width="568" height="523"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="rrY-DU-p4c">
+                                <rect key="frame" x="290" y="272" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9dV-ao-hc1" firstAttribute="leading" secondItem="jrq-5D-QFu" secondAttribute="leadingMargin" id="3SX-tR-DnU"/>
+                            <constraint firstItem="9dV-ao-hc1" firstAttribute="centerX" secondItem="rrY-DU-p4c" secondAttribute="centerX" id="6iU-wS-ivy"/>
+                            <constraint firstItem="0en-Ik-yx0" firstAttribute="top" secondItem="9dV-ao-hc1" secondAttribute="bottom" constant="8" id="SpV-lD-wmJ"/>
+                            <constraint firstItem="9dV-ao-hc1" firstAttribute="centerY" secondItem="rrY-DU-p4c" secondAttribute="centerY" constant="-0.5" id="Tl1-4d-jSD"/>
+                            <constraint firstItem="9dV-ao-hc1" firstAttribute="trailing" secondItem="jrq-5D-QFu" secondAttribute="trailingMargin" id="e6E-48-THX"/>
+                            <constraint firstAttribute="centerX" secondItem="9dV-ao-hc1" secondAttribute="centerX" id="hfT-6P-rkt"/>
+                            <constraint firstItem="9dV-ao-hc1" firstAttribute="top" secondItem="NnW-jV-g0w" secondAttribute="bottom" id="qUl-h8-zr9"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="mostRecent" id="JYA-nE-Qdv"/>
+                    <connections>
+                        <outlet property="navegador" destination="9dV-ao-hc1" id="Gnt-BA-GMj"/>
+                        <outlet property="precarga" destination="rrY-DU-p4c" id="Jdj-JZ-Mpg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CYm-6r-fgC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-125" y="1142"/>
+            <point key="canvasLocation" x="-125" y="1193"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="lpR-5M-wwg">

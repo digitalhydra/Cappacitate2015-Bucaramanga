@@ -18,6 +18,7 @@
 		ADF823211AB3727F00B372EE /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADF8231E1AB3727F00B372EE /* logo@2x.png */; };
 		ADF823251AB3733D00B372EE /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF823241AB3733D00B372EE /* HomeViewController.m */; };
 		ADF823271AB37EBE00B372EE /* pizza.png in Resources */ = {isa = PBXBuildFile; fileRef = ADF823261AB37EBE00B372EE /* pizza.png */; };
+		ADF8232A1AB38B2400B372EE /* NavegadorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF823291AB38B2400B372EE /* NavegadorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		ADF823231AB3733D00B372EE /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		ADF823241AB3733D00B372EE /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		ADF823261AB37EBE00B372EE /* pizza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pizza.png; sourceTree = "<group>"; };
+		ADF823281AB38B2400B372EE /* NavegadorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavegadorViewController.h; sourceTree = "<group>"; };
+		ADF823291AB38B2400B372EE /* NavegadorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavegadorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 		ADF822E91AB3711300B372EE = {
 			isa = PBXGroup;
 			children = (
+				ADF823281AB38B2400B372EE /* NavegadorViewController.h */,
+				ADF823291AB38B2400B372EE /* NavegadorViewController.m */,
 				ADF823261AB37EBE00B372EE /* pizza.png */,
 				ADF823231AB3733D00B372EE /* HomeViewController.h */,
 				ADF823241AB3733D00B372EE /* HomeViewController.m */,
@@ -239,6 +244,7 @@
 				ADF822FE1AB3711300B372EE /* ViewController.m in Sources */,
 				ADF822FB1AB3711300B372EE /* AppDelegate.m in Sources */,
 				ADF822F81AB3711300B372EE /* main.m in Sources */,
+				ADF8232A1AB38B2400B372EE /* NavegadorViewController.m in Sources */,
 				ADF823251AB3733D00B372EE /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
