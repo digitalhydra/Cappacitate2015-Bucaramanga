@@ -22,21 +22,21 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YpW-HV-qOD">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pesos" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YpW-HV-qOD">
                                 <rect key="frame" x="252" y="96" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="q1N-7b-bDk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dV9-H3-qAj">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="TRM" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="dV9-H3-qAj">
                                 <rect key="frame" x="252" y="163" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="764-5M-gDL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="yes" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QT1-V7-w2K">
                                 <rect key="frame" x="282" y="134" width="37" height="21"/>
@@ -49,6 +49,9 @@
                                 <state key="normal" title="Calcular">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculateDolarButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pfc-ym-wou"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJl-JK-30f">
                                 <rect key="frame" x="264" y="265" width="78" height="21"/>
@@ -56,9 +59,19 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URX-o6-Vvi">
+                                <rect key="frame" x="219" y="550" width="163" height="30"/>
+                                <state key="normal" title="Convertir Dolar a Pesos">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="W9c-rM-tNj" kind="show" id="cSn-ph-XPu"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="URX-o6-Vvi" secondAttribute="centerX" id="3qs-W5-9cS"/>
                             <constraint firstItem="qJl-JK-30f" firstAttribute="centerX" secondItem="lex-TS-wYs" secondAttribute="centerX" constant="2.5" id="9Am-yP-fVF"/>
                             <constraint firstItem="dV9-H3-qAj" firstAttribute="top" secondItem="QT1-V7-w2K" secondAttribute="bottom" constant="8" id="CX0-X3-1VF"/>
                             <constraint firstItem="cXM-vU-xbx" firstAttribute="centerX" secondItem="YpW-HV-qOD" secondAttribute="centerX" constant="-0.5" id="JQJ-6A-DrT"/>
@@ -66,6 +79,7 @@
                             <constraint firstItem="dV9-H3-qAj" firstAttribute="centerX" secondItem="lex-TS-wYs" secondAttribute="centerX" id="MsE-Hc-ttQ"/>
                             <constraint firstItem="lex-TS-wYs" firstAttribute="top" secondItem="dV9-H3-qAj" secondAttribute="bottom" constant="22" id="Tki-a9-sVQ"/>
                             <constraint firstItem="dV9-H3-qAj" firstAttribute="centerX" secondItem="QT1-V7-w2K" secondAttribute="centerX" id="WJ6-pW-6CV"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="URX-o6-Vvi" secondAttribute="bottom" constant="20" id="dAm-3t-E7I"/>
                             <constraint firstItem="YpW-HV-qOD" firstAttribute="centerX" secondItem="QT1-V7-w2K" secondAttribute="centerX" id="gGt-O1-cvC"/>
                             <constraint firstItem="qJl-JK-30f" firstAttribute="top" secondItem="lex-TS-wYs" secondAttribute="bottom" constant="20" id="gfz-wW-6La"/>
                             <constraint firstAttribute="centerX" secondItem="cXM-vU-xbx" secondAttribute="centerX" id="i19-jQ-HsP"/>
@@ -73,9 +87,47 @@
                             <constraint firstItem="cXM-vU-xbx" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="15" id="uvl-nd-bJe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pesosText" destination="YpW-HV-qOD" id="KJL-Ua-Auh"/>
+                        <outlet property="resultText" destination="qJl-JK-30f" id="By2-6L-igD"/>
+                        <outlet property="trmText" destination="dV9-H3-qAj" id="5YC-h2-IHc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Screen2 View Controller-->
+        <scene sceneID="lcE-Cr-hTe">
+            <objects>
+                <viewController id="W9c-rM-tNj" customClass="Screen2ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EK3-oR-8lb"/>
+                        <viewControllerLayoutGuide type="bottom" id="u3h-p1-cEj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uUL-cl-z0H">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TmH-Cc-Wmg">
+                                <rect key="frame" x="279" y="58" width="42" height="30"/>
+                                <state key="normal" title="Volver">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton:" destination="W9c-rM-tNj" eventType="touchUpInside" id="8Z5-IO-icG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.69836361650000001" green="1" blue="0.94307866070000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="TmH-Cc-Wmg" firstAttribute="top" secondItem="EK3-oR-8lb" secondAttribute="bottom" constant="38" id="7J1-9x-qiJ"/>
+                            <constraint firstAttribute="centerX" secondItem="TmH-Cc-Wmg" secondAttribute="centerX" id="i4n-YE-cBh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i8F-br-Csw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1043" y="305"/>
         </scene>
     </scenes>
 </document>

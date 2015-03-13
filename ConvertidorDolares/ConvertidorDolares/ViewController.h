@@ -11,8 +11,15 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextField *pesosText;
+
+@property (strong, nonatomic) IBOutlet UITextField *trmText;
+
+- (IBAction)calculateDolarButton:(id)sender;
+
 @property Converter * calculate;
 
+@property (strong, nonatomic) IBOutlet UILabel *resultText;
 
 @end
 

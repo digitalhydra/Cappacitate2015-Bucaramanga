@@ -21,10 +21,10 @@
     _calculate = [[Converter alloc] init];
     //_calculate= [Converter new];
 
-    [_calculate calculateResultInDollars:50000 andTRM:2600];
+   /* [_calculate calculateResultInDollars:50000 andTRM:2600];
     NSLog(@"%f", _calculate.result);
     
-    NSLog(@"%f", [_calculate calculateResultInPesos:19.23]);
+    NSLog(@"%f", [_calculate calculateResultInPesos:19.23]);*/
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,4 +32,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)calculateDolarButton:(id)sender {
+    [_calculate calculateResultInDollars:[_pesosText.text integerValue] andTRM:[_trmText.text floatValue]];
+    _resultText.text = [NSString stringWithFormat:@"%.02f", _calculate.result ];
+}
 @end
+
+
+
+
+
+
+
+
