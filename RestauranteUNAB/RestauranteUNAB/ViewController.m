@@ -25,7 +25,9 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    _home = [segue destinationViewController];
+    /*_home = [segue destinationViewController];*/
+    NSLog(@"%@", [segue.destinationViewController viewControllers]);
+    _home = [[segue.destinationViewController viewControllers] objectAtIndex:0];
     _home.dataTransfer = _userText.text;
 
 }
