@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADF822BD1AB344DC00B372EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF822BC1AB344DC00B372EE /* main.m */; };
+		ADF822C01AB344DC00B372EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF822BF1AB344DC00B372EE /* AppDelegate.m */; };
+		ADF822C31AB344DC00B372EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF822C21AB344DC00B372EE /* ViewController.m */; };
+		ADF822C61AB344DC00B372EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF822C41AB344DC00B372EE /* Main.storyboard */; };
+		ADF822C81AB344DC00B372EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF822C71AB344DC00B372EE /* Images.xcassets */; };
+		ADF822CB1AB344DC00B372EE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADF822C91AB344DC00B372EE /* LaunchScreen.xib */; };
+		ADF822D71AB344DC00B372EE /* ConvertidorDolaresTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF822D61AB344DC00B372EE /* ConvertidorDolaresTests.m */; };
+		ADF822E21AB345A200B372EE /* Converter.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF822E11AB345A200B372EE /* Converter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADF822D11AB344DC00B372EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADF822AF1AB344DB00B372EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADF822B61AB344DC00B372EE;
+			remoteInfo = ConvertidorDolares;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADF822B71AB344DC00B372EE /* ConvertidorDolares.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvertidorDolares.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF822BB1AB344DC00B372EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADF822BC1AB344DC00B372EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ADF822BE1AB344DC00B372EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ADF822BF1AB344DC00B372EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ADF822C11AB344DC00B372EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ADF822C21AB344DC00B372EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ADF822C51AB344DC00B372EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADF822C71AB344DC00B372EE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ADF822CA1AB344DC00B372EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		ADF822D01AB344DC00B372EE /* ConvertidorDolaresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConvertidorDolaresTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF822D51AB344DC00B372EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADF822D61AB344DC00B372EE /* ConvertidorDolaresTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConvertidorDolaresTests.m; sourceTree = "<group>"; };
+		ADF822E01AB345A200B372EE /* Converter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Converter.h; sourceTree = "<group>"; };
+		ADF822E11AB345A200B372EE /* Converter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Converter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADF822B41AB344DC00B372EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF822CD1AB344DC00B372EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADF822AE1AB344DB00B372EE = {
+			isa = PBXGroup;
+			children = (
+				ADF822B91AB344DC00B372EE /* ConvertidorDolares */,
+				ADF822D31AB344DC00B372EE /* ConvertidorDolaresTests */,
+				ADF822B81AB344DC00B372EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADF822B81AB344DC00B372EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADF822B71AB344DC00B372EE /* ConvertidorDolares.app */,
+				ADF822D01AB344DC00B372EE /* ConvertidorDolaresTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADF822B91AB344DC00B372EE /* ConvertidorDolares */ = {
+			isa = PBXGroup;
+			children = (
+				ADF822BE1AB344DC00B372EE /* AppDelegate.h */,
+				ADF822BF1AB344DC00B372EE /* AppDelegate.m */,
+				ADF822E31AB345C300B372EE /* Model */,
+				ADF822E41AB345D900B372EE /* Controller */,
+				ADF822E51AB345EF00B372EE /* View */,
+				ADF822C71AB344DC00B372EE /* Images.xcassets */,
+				ADF822C91AB344DC00B372EE /* LaunchScreen.xib */,
+				ADF822BA1AB344DC00B372EE /* Supporting Files */,
+			);
+			path = ConvertidorDolares;
+			sourceTree = "<group>";
+		};
+		ADF822BA1AB344DC00B372EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADF822BB1AB344DC00B372EE /* Info.plist */,
+				ADF822BC1AB344DC00B372EE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADF822D31AB344DC00B372EE /* ConvertidorDolaresTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADF822D61AB344DC00B372EE /* ConvertidorDolaresTests.m */,
+				ADF822D41AB344DC00B372EE /* Supporting Files */,
+			);
+			path = ConvertidorDolaresTests;
+			sourceTree = "<group>";
+		};
+		ADF822D41AB344DC00B372EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADF822D51AB344DC00B372EE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADF822E31AB345C300B372EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ADF822E01AB345A200B372EE /* Converter.h */,
+				ADF822E11AB345A200B372EE /* Converter.m */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		ADF822E41AB345D900B372EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ADF822C11AB344DC00B372EE /* ViewController.h */,
+				ADF822C21AB344DC00B372EE /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		ADF822E51AB345EF00B372EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADF822C41AB344DC00B372EE /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADF822B61AB344DC00B372EE /* ConvertidorDolares */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADF822DA1AB344DC00B372EE /* Build configuration list for PBXNativeTarget "ConvertidorDolares" */;
+			buildPhases = (
+				ADF822B31AB344DC00B372EE /* Sources */,
+				ADF822B41AB344DC00B372EE /* Frameworks */,
+				ADF822B51AB344DC00B372EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConvertidorDolares;
+			productName = ConvertidorDolares;
+			productReference = ADF822B71AB344DC00B372EE /* ConvertidorDolares.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADF822CF1AB344DC00B372EE /* ConvertidorDolaresTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADF822DD1AB344DC00B372EE /* Build configuration list for PBXNativeTarget "ConvertidorDolaresTests" */;
+			buildPhases = (
+				ADF822CC1AB344DC00B372EE /* Sources */,
+				ADF822CD1AB344DC00B372EE /* Frameworks */,
+				ADF822CE1AB344DC00B372EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADF822D21AB344DC00B372EE /* PBXTargetDependency */,
+			);
+			name = ConvertidorDolaresTests;
+			productName = ConvertidorDolaresTests;
+			productReference = ADF822D01AB344DC00B372EE /* ConvertidorDolaresTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADF822AF1AB344DB00B372EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Cymetria;
+				TargetAttributes = {
+					ADF822B61AB344DC00B372EE = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					ADF822CF1AB344DC00B372EE = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = ADF822B61AB344DC00B372EE;
+					};
+				};
+			};
+			buildConfigurationList = ADF822B21AB344DC00B372EE /* Build configuration list for PBXProject "ConvertidorDolares" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADF822AE1AB344DB00B372EE;
+			productRefGroup = ADF822B81AB344DC00B372EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADF822B61AB344DC00B372EE /* ConvertidorDolares */,
+				ADF822CF1AB344DC00B372EE /* ConvertidorDolaresTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADF822B51AB344DC00B372EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF822C61AB344DC00B372EE /* Main.storyboard in Resources */,
+				ADF822CB1AB344DC00B372EE /* LaunchScreen.xib in Resources */,
+				ADF822C81AB344DC00B372EE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF822CE1AB344DC00B372EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADF822B31AB344DC00B372EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF822C31AB344DC00B372EE /* ViewController.m in Sources */,
+				ADF822C01AB344DC00B372EE /* AppDelegate.m in Sources */,
+				ADF822E21AB345A200B372EE /* Converter.m in Sources */,
+				ADF822BD1AB344DC00B372EE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF822CC1AB344DC00B372EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF822D71AB344DC00B372EE /* ConvertidorDolaresTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADF822D21AB344DC00B372EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADF822B61AB344DC00B372EE /* ConvertidorDolares */;
+			targetProxy = ADF822D11AB344DC00B372EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADF822C41AB344DC00B372EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADF822C51AB344DC00B372EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADF822C91AB344DC00B372EE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADF822CA1AB344DC00B372EE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADF822D81AB344DC00B372EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ADF822D91AB344DC00B372EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADF822DB1AB344DC00B372EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ConvertidorDolares/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ADF822DC1AB344DC00B372EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ConvertidorDolares/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ADF822DE1AB344DC00B372EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ConvertidorDolaresTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConvertidorDolares.app/ConvertidorDolares";
+			};
+			name = Debug;
+		};
+		ADF822DF1AB344DC00B372EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ConvertidorDolaresTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConvertidorDolares.app/ConvertidorDolares";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADF822B21AB344DC00B372EE /* Build configuration list for PBXProject "ConvertidorDolares" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF822D81AB344DC00B372EE /* Debug */,
+				ADF822D91AB344DC00B372EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADF822DA1AB344DC00B372EE /* Build configuration list for PBXNativeTarget "ConvertidorDolares" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF822DB1AB344DC00B372EE /* Debug */,
+				ADF822DC1AB344DC00B372EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ADF822DD1AB344DC00B372EE /* Build configuration list for PBXNativeTarget "ConvertidorDolaresTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF822DE1AB344DC00B372EE /* Debug */,
+				ADF822DF1AB344DC00B372EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADF822AF1AB344DB00B372EE /* Project object */;
+}
