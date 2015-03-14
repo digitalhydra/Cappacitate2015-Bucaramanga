@@ -30,6 +30,12 @@
 }
 
 - (IBAction)takePhotoCamera:(id)sender {
+    UIImagePickerController * camara = [[UIImagePickerController alloc] init];
+    camara.delegate = self;
+    camara.sourceType = UIImagePickerControllerSourceTypeCamera;
+    
+    [self presentViewController:camara animated:YES completion:nil];
+    
 }
 
 - (IBAction)takePhotoGallery:(id)sender {
