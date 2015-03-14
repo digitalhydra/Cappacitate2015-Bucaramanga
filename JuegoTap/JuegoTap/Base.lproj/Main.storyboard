@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="JuegoTap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Juego Tap" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRx-op-z33">
+                                <rect key="frame" x="253" y="28" width="159" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="159" id="Aoa-Gx-XWe"/>
+                                    <constraint firstAttribute="height" constant="42" id="XUW-lO-Ndh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puntaje" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbX-ls-oq1">
+                                <rect key="frame" x="271" y="404" width="58" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0L4-gq-uYD">
+                                <rect key="frame" x="188" y="433" width="224" height="69"/>
+                                <color key="backgroundColor" red="0.76916529960000002" green="0.90101067030000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="224" id="5aH-7j-ILW"/>
+                                    <constraint firstAttribute="height" constant="69" id="doF-OP-YBh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXh-uC-VOV">
+                                <rect key="frame" x="164" y="151" width="272" height="245"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="245" id="0cy-MK-DiX"/>
+                                    <constraint firstAttribute="width" constant="272" id="7Hi-3J-Ogq"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="1398800834069.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="c1P-mI-oG1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiempo: 00:30" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eth-0Z-Yt7">
+                                <rect key="frame" x="16" y="84" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.9937525774" blue="0.89239506000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="AbX-ls-oq1" firstAttribute="centerX" secondItem="XXh-uC-VOV" secondAttribute="centerX" id="Hc9-O2-HDA"/>
+                            <constraint firstItem="AbX-ls-oq1" firstAttribute="top" secondItem="XXh-uC-VOV" secondAttribute="bottom" constant="8" id="JLY-uN-PsB"/>
+                            <constraint firstItem="AbX-ls-oq1" firstAttribute="centerX" secondItem="0L4-gq-uYD" secondAttribute="centerX" id="Skb-yj-Uup"/>
+                            <constraint firstItem="eth-0Z-Yt7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="bBp-5I-yps"/>
+                            <constraint firstAttribute="centerX" secondItem="jRx-op-z33" secondAttribute="centerX" constant="-32.5" id="dxR-em-t7a"/>
+                            <constraint firstItem="XXh-uC-VOV" firstAttribute="top" secondItem="jRx-op-z33" secondAttribute="bottom" constant="81" id="lWu-nB-GWB"/>
+                            <constraint firstItem="0L4-gq-uYD" firstAttribute="top" secondItem="AbX-ls-oq1" secondAttribute="bottom" constant="8" id="r3c-Ku-NFD"/>
+                            <constraint firstItem="eth-0Z-Yt7" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="64" id="sHF-jP-SWX"/>
+                            <constraint firstAttribute="centerX" secondItem="XXh-uC-VOV" secondAttribute="centerX" id="tdU-Jy-fbN"/>
+                            <constraint firstItem="jRx-op-z33" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="w41-rk-XCZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="0L4-gq-uYD" id="3hz-wK-JhL"/>
+                        <outlet property="timerLabel" destination="eth-0Z-Yt7" id="XWM-Pq-LoM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1398800834069.png" width="512" height="512"/>
+    </resources>
+</document>
