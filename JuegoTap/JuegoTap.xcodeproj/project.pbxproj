@@ -14,6 +14,7 @@
 		ADCF9E911AB4BC2F000C3F64 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCF9E8F1AB4BC2F000C3F64 /* LaunchScreen.xib */; };
 		ADCF9E9D1AB4BC2F000C3F64 /* JuegoTapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCF9E9C1AB4BC2F000C3F64 /* JuegoTapTests.swift */; };
 		ADCF9EA71AB4BD90000C3F64 /* 1398800834069.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCF9EA61AB4BD90000C3F64 /* 1398800834069.png */; };
+		ADCF9EAB1AB4C59B000C3F64 /* Usuario.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCF9EAA1AB4C59B000C3F64 /* Usuario.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,9 @@
 		ADCF9E9B1AB4BC2F000C3F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADCF9E9C1AB4BC2F000C3F64 /* JuegoTapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuegoTapTests.swift; sourceTree = "<group>"; };
 		ADCF9EA61AB4BD90000C3F64 /* 1398800834069.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1398800834069.png; sourceTree = "<group>"; };
+		ADCF9EA81AB4C59B000C3F64 /* JuegoTap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JuegoTap-Bridging-Header.h"; sourceTree = "<group>"; };
+		ADCF9EA91AB4C59B000C3F64 /* Usuario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Usuario.h; sourceTree = "<group>"; };
+		ADCF9EAA1AB4C59B000C3F64 /* Usuario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Usuario.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +65,13 @@
 		ADCF9E781AB4BC2F000C3F64 = {
 			isa = PBXGroup;
 			children = (
+				ADCF9EA91AB4C59B000C3F64 /* Usuario.h */,
+				ADCF9EAA1AB4C59B000C3F64 /* Usuario.m */,
 				ADCF9EA61AB4BD90000C3F64 /* 1398800834069.png */,
 				ADCF9E831AB4BC2F000C3F64 /* JuegoTap */,
 				ADCF9E991AB4BC2F000C3F64 /* JuegoTapTests */,
 				ADCF9E821AB4BC2F000C3F64 /* Products */,
+				ADCF9EA81AB4C59B000C3F64 /* JuegoTap-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADCF9E891AB4BC2F000C3F64 /* ViewController.swift in Sources */,
+				ADCF9EAB1AB4C59B000C3F64 /* Usuario.m in Sources */,
 				ADCF9E871AB4BC2F000C3F64 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,9 +348,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = JuegoTap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JuegoTap-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,9 +361,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = JuegoTap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JuegoTap-Bridging-Header.h";
 			};
 			name = Release;
 		};

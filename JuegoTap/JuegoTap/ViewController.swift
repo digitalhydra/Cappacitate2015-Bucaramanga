@@ -10,9 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+
     @IBOutlet var timerLabel: UILabel!
     
     @IBOutlet var scoreLabel: UILabel!
+    
+
     
     var count = 0
     var seconds = 0
@@ -50,6 +54,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         beginGame();
+        var usuario:Usuario = Usuario()
     
     }
 
