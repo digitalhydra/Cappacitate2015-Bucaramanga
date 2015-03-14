@@ -21,8 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    GMSCameraPosition * camara = [GMSCameraPosition cameraWithLatitude:7.1392 longitude:-73.4198 zoom:6];
+    GMSCameraPosition * camara = [GMSCameraPosition cameraWithLatitude:7.1392 longitude:-73.4198 zoom:10];
     mapa = [GMSMapView mapWithFrame:CGRectZero camera:camara];
+    mapa.mapType = kGMSTypeHybrid;
     mapa.myLocationEnabled = YES;
     self.view = mapa;
 }

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona tu foto de Perfil" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8so-xM-69p">
+                                <rect key="frame" x="197" y="28" width="207" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZDv-3L-0yb">
+                                <rect key="frame" x="180" y="80" width="240" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="5Cg-bX-cp0"/>
+                                    <constraint firstAttribute="width" constant="240" id="lyi-Lu-JTT"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ovl-Jd-xMh">
+                                <rect key="frame" x="234" y="395" width="132" height="30"/>
+                                <state key="normal" title="Tomar foto Camara">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhotoCamera:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="P9B-Aj-CM9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXU-RW-v4r">
+                                <rect key="frame" x="234" y="440" width="133" height="30"/>
+                                <state key="normal" title="Seleccionar Galeria">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhotoGallery:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CMa-i5-aUc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Ovl-Jd-xMh" secondAttribute="centerX" id="FEm-7J-UOL"/>
+                            <constraint firstItem="ZDv-3L-0yb" firstAttribute="top" secondItem="8so-xM-69p" secondAttribute="bottom" constant="31" id="LL4-2M-IQX"/>
+                            <constraint firstItem="Ovl-Jd-xMh" firstAttribute="top" secondItem="ZDv-3L-0yb" secondAttribute="bottom" constant="45" id="NNR-cA-uTS"/>
+                            <constraint firstAttribute="centerX" secondItem="WXU-RW-v4r" secondAttribute="centerX" constant="-0.5" id="TYZ-cs-PJc"/>
+                            <constraint firstItem="8so-xM-69p" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="WYw-Cw-YqA"/>
+                            <constraint firstAttribute="centerX" secondItem="8so-xM-69p" secondAttribute="centerX" constant="-0.5" id="ZbI-Fu-jiF"/>
+                            <constraint firstAttribute="centerX" secondItem="ZDv-3L-0yb" secondAttribute="centerX" id="esI-R4-19Q"/>
+                            <constraint firstItem="WXU-RW-v4r" firstAttribute="top" secondItem="Ovl-Jd-xMh" secondAttribute="bottom" constant="15" id="qDL-qI-cSY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraButton" destination="Ovl-Jd-xMh" id="Jp5-KA-nc9"/>
+                        <outlet property="foto" destination="ZDv-3L-0yb" id="u3A-PZ-Cwc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
