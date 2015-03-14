@@ -41,7 +41,7 @@
         <!--Mapa Google-->
         <scene sceneID="I58-FX-xCF">
             <objects>
-                <viewController id="Mey-zk-3Kk" sceneMemberID="viewController">
+                <viewController id="Mey-zk-3Kk" customClass="GoogleViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qXF-DI-ZTF"/>
                         <viewControllerLayoutGuide type="bottom" id="LMN-M0-YOO"/>
